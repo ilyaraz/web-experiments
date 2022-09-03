@@ -1,0 +1,14 @@
+syntax = "proto3";
+package list_reverser;
+
+service ListReverser {
+    rpc reverseList (reverseListRequest) returns (reverseListResponse);
+}
+
+message reverseListRequest {
+    repeated string list_elements = 1;
+}
+
+message reverseListResponse {
+    repeated string list_elements = 1;
+}
